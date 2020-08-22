@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/jdbcdemo?characterEncoding=utf-8&useUnicode=true?&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  mail:
+    username:
+    host: smtp.qq.com
+    properties.mail.stmp.ssl.enable: true
+    password:
+mybatis:
+  type-aliases-package: com.example.demo.pojo
+  mapper-locations: classpath:mybatis/mapper/*.xml
+server:
+  port: 8989
+
